@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>兄弟会第十五天 | 王新阳个人博客</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="兄弟会第十五天 | 王新阳个人博客">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="欢迎来到 暖阳的博客!  点击 MyGitHub可以进入我的Github. 简易聊天室&amp;amp;emsp&amp;amp;emsp今天是兄弟会第十七天了，今天晚上终于按照教程写了一个聊天室，实在是太难了,哎，总之是说不出的难度，还好能按着教程把东西给做完了。真的特别感谢这个网站的作者    https:&#x2F;&#x2F;www.jianshu.com&#x2F;p&#x2F;b608a765519a下面就是我的代码，虽然现在可能看不太懂，">
+<meta property="og:type" content="article">
+<meta property="og:title" content="兄弟会第十七天">
+<meta property="og:url" content="http:&#x2F;&#x2F;wxy20170906.github.io.com&#x2F;2019&#x2F;11&#x2F;19&#x2F;17%E5%85%84%E5%BC%9F%E4%BC%9A%E7%AC%AC%E5%8D%81%E4%B8%83%E5%A4%A9&#x2F;index.html">
+<meta property="og:site_name" content="王新阳个人博客">
+<meta property="og:description" content="欢迎来到 暖阳的博客!  点击 MyGitHub可以进入我的Github. 简易聊天室&amp;amp;emsp&amp;amp;emsp今天是兄弟会第十七天了，今天晚上终于按照教程写了一个聊天室，实在是太难了,哎，总之是说不出的难度，还好能按着教程把东西给做完了。真的特别感谢这个网站的作者    https:&#x2F;&#x2F;www.jianshu.com&#x2F;p&#x2F;b608a765519a下面就是我的代码，虽然现在可能看不太懂，">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-11-19T01:17:18.471Z">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="icon" href="/img/avatar.jpg">
+
+<link href="/css/style.css?v=1.0.1" rel="stylesheet">
+
+<link href="/css/hl_theme/atom-light.css?v=1.0.1" rel="stylesheet">
+
+<link href="//cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+<link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="/js/jquery.autocomplete.min.js?v=1.0.1" ></script>
+
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.bootcss.com/nprogress/0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js" ></script>
+
+<script src="/js/iconfont.js?v=1.0.1" ></script>
+
+</head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="false">
+  <input class="theme_blog_path" value="">
+</div>
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/" class="avatar_target">
+    <img class="avatar" src="/img/avatar.jpg" />
+</a>
+<div class="author">
+    <span>王新阳</span>
+</div>
+
+<div class="icon">
+    
+        
+        <a title="rss" href="/atom.xml" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-rss"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="github" href="https://github.com/yelog" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-github"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="facebook" href="https://www.facebook.com/faker.tops" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-facebook"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+    
+        
+    
+        
+        <a title="instagram" href="https://www.facebook.com/faker.tops" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-instagram"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="reddit" href="https://www.reddit.com/user/yelog/" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-reddit"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="weibo" href="http://weibo.com/u/2307534817" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-weibo"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="jianshu" href="https://www.jianshu.com/u/ff56736de7cf" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-jianshu"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="zhihu" href="https://www.zhihu.com/people/jaytp/activities" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-zhihu"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+    
+        
+        <a title="oschina" href="https://my.oschina.net/yelog" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-oschina"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+    
+        
+        <a title="email" href="mailto:jaytp@qq.com" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-email"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="qq" href="http://wpa.qq.com/msgrd?v=3&uin=872336115&site=qq&menu=yes" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-qq"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="kugou" href="https://www.kugou.com/" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-kugou"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="neteasemusic" href="https://music.163.com/#/user/home?id=88151013" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-neteasemusic"></use>
+                </svg>
+            
+        </a>
+        
+    
+</div>
+
+
+
+
+<ul>
+    <li><div class="all active">全部文章<small>(17)</small></div></li>
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+    
+    
+    
+    
+    </div>
+    <div><a class="about  hasFriend  site_url"  href="/about">关于</a><a style="width: 50%"  class="friends">友链</a></div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="17">
+
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        友情链接
+        <i class="back-title-list"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="http://yelog.org/">叶落阁</a></li>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <form onkeydown="if(event.keyCode==13){return false;}">
+        <input class="search" type="text" placeholder="Search..." autocomplete="off"id="local-search-input" >
+        <i class="cross"></i>
+        <span>
+            <label for="tagswitch">Tags:</label>
+            <input id="tagswitch" type="checkbox" style="display: none" />
+            <i id="tagsWitchIcon"></i>
+        </span>
+    </form>
+    <div class="tags-list">
+    
+    <div class="clearfix"></div>
+</div>
+
+    
+    <nav id="title-list-nav">
+        
+        <a id="top" class=""
+           href="/2019/11/19/17%E5%85%84%E5%BC%9F%E4%BC%9A%E7%AC%AC%E5%8D%81%E4%B8%83%E5%A4%A9/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="兄弟会第十七天">兄弟会第十七天</span>
+            <span class="post-date" title="2019-11-19 09:02:28">2019/11/19</span>
+        </a>
+        
+        <a id="top" class=""
+           href="/2019/11/19/16%E5%85%84%E5%BC%9F%E4%BC%9A%E7%AC%AC%E5%8D%81%E5%85%AD%E5%A4%A9/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="兄弟会第十六天">兄弟会第十六天</span>
+            <span class="post-date" title="2019-11-19 09:02:15">2019/11/19</span>
+        </a>
+        
+        <a id="top" class=""
+           href="/2019/11/19/15%E5%85%84%E5%BC%9F%E4%BC%9A%E7%AC%AC%E5%8D%81%E4%BA%94%E5%A4%A9/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="兄弟会第十五天">兄弟会第十五天</span>
+            <span class="post-date" title="2019-11-19 09:02:03">2019/11/19</span>
+        </a>
+        
+        <a id="top" class=""
+           href="/2019/11/19/14%E5%85%84%E5%BC%9F%E4%BC%9A%E7%AC%AC%E5%8D%81%E5%9B%9B%E5%A4%A9/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="兄弟会第十四天">兄弟会第十四天</span>
+            <span class="post-date" title="2019-11-19 09:01:51">2019/11/19</span>
+        </a>
+        
+        <a id="top" class=""
+           href="/2019/11/19/13%E5%85%84%E5%BC%9F%E4%BC%9A%E7%AC%AC%E5%8D%81%E4%B8%89%E5%A4%A9/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="兄弟会第十三天">兄弟会第十三天</span>
+            <span class="post-date" title="2019-11-19 09:01:35">2019/11/19</span>
+        </a>
+        
+        <a id="top" class=""
+           href="/2019/11/19/12%E5%85%84%E5%BC%9F%E4%BC%9A%E7%AC%AC%E5%8D%81%E4%BA%8C%E5%A4%A9/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="兄弟会第十二天">兄弟会第十二天</span>
+            <span class="post-date" title="2019-11-19 09:01:13">2019/11/19</span>
+        </a>
+        
+        <a id="top" class=""
+           href="/2019/11/19/11%E5%85%84%E5%BC%9F%E4%BC%9A%E7%AC%AC%E5%8D%81%E4%B8%80%E5%A4%A9/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="兄弟会第十一天">兄弟会第十一天</span>
+            <span class="post-date" title="2019-11-19 08:52:51">2019/11/19</span>
+        </a>
+        
+        <a id="top" class=""
+           href="/2019/11/19/10%E5%85%84%E5%BC%9F%E4%BC%9A%E7%AC%AC%E5%8D%81%E5%A4%A9/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="兄弟会第十天">兄弟会第十天</span>
+            <span class="post-date" title="2019-11-19 08:52:32">2019/11/19</span>
+        </a>
+        
+        <a id="top" class=""
+           href="/2019/11/19/9%E5%85%84%E5%BC%9F%E4%BC%9A%E7%AC%AC%E4%B9%9D%E5%A4%A9/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="兄弟会第九天">兄弟会第九天</span>
+            <span class="post-date" title="2019-11-19 08:52:05">2019/11/19</span>
+        </a>
+        
+        <a id="top" class=""
+           href="/2019/11/19/8%E5%85%84%E5%BC%9F%E4%BC%9A%E7%AC%AC%E5%85%AB%E5%A4%A9/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="兄弟会第八天">兄弟会第八天</span>
+            <span class="post-date" title="2019-11-19 08:43:00">2019/11/19</span>
+        </a>
+        
+        <a id="top" class=""
+           href="/2019/11/19/7%E5%85%84%E5%BC%9F%E4%BC%9A%E7%AC%AC%E4%B8%83%E5%A4%A9/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="兄弟会第七天">兄弟会第七天</span>
+            <span class="post-date" title="2019-11-19 08:38:16">2019/11/19</span>
+        </a>
+        
+        <a id="top" class=""
+           href="/2019/11/19/6%E5%85%84%E5%BC%9F%E4%BC%9A%E7%AC%AC%E5%85%AD%E5%A4%A9/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="兄弟会第六天">兄弟会第六天</span>
+            <span class="post-date" title="2019-11-19 08:30:53">2019/11/19</span>
+        </a>
+        
+        <a id="top" class=""
+           href="/2019/11/19/5%E5%85%84%E5%BC%9F%E4%BC%9A%E7%AC%AC%E4%BA%94%E5%A4%A9/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="兄弟会第五天">兄弟会第五天</span>
+            <span class="post-date" title="2019-11-19 08:16:11">2019/11/19</span>
+        </a>
+        
+        <a id="top" class=""
+           href="/2019/11/19/4%E5%85%84%E5%BC%9F%E4%BC%9A%E7%AC%AC%E5%9B%9B%E5%A4%A9/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="兄弟会第四天">兄弟会第四天</span>
+            <span class="post-date" title="2019-11-19 07:14:30">2019/11/19</span>
+        </a>
+        
+        <a id="top" class=""
+           href="/2019/11/19/3%E5%85%84%E5%BC%9F%E4%BC%9A%E7%AC%AC%E4%B8%89%E5%A4%A9/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="兄弟会第三天">兄弟会第三天</span>
+            <span class="post-date" title="2019-11-19 07:11:08">2019/11/19</span>
+        </a>
+        
+        <a id="top" class=""
+           href="/2019/11/19/2%E5%85%84%E5%BC%9F%E4%BC%9A%E7%AC%AC%E4%BA%8C%E5%A4%A9/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="兄弟会的第二天">兄弟会的第二天</span>
+            <span class="post-date" title="2019-11-19 07:06:46">2019/11/19</span>
+        </a>
+        
+        <a id="top" class=""
+           href="/2019/11/18/1%E5%85%84%E5%BC%9F%E4%BC%9A%E7%AC%AC%E4%B8%80%E5%A4%A9/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="兄弟会的第一天">兄弟会的第一天</span>
+            <span class="post-date" title="2019-11-18 20:49:55">2019/11/18</span>
+        </a>
+        
+    </nav>
+</div>
+    </div>
+    <div class="hide-list">
+        <div class="semicircle">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div class="post">
+    <div class="pjax">
+        <article id="post-15兄弟会第十五天" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">兄弟会第十五天</h1>
+    
+    <div class="article-meta">
+        
+        <span class="top"><a>置顶</a></span>
+        
+        
+        
+        
+    </div>
+    <div class="article-meta">
+        
+        创建时间:<time class="date" title='更新时间: 2019-11-19 09:16:52'>2019-11-19 09:02</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        
+        <span id="busuanzi_container_page_pv">
+            阅读:<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#前端入门"><span class="toc-text">前端入门</span></a></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-3 i,
+    .toc-level-3 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>欢迎来到 <a href="https://wxy20170906.github.io/" target="_blank" rel="noopener">暖阳的博客</a>!  点击 <a href="https://wxy20170906.github.io" target="_blank" rel="noopener">MyGitHub</a>可以进入我的Github.</p>
+<h2 id="前端入门"><a href="#前端入门" class="headerlink" title="前端入门"></a>前端入门</h2><p>今天是第十五天了，今天学习了HTML和CSS解开了许许多多的疑惑，下面是一些命令的清单</p>
+<ul>
+<li><p>水平分隔符标签: <hr></p>
+</li>
+<li><p>预格式化文本标签(保留文本的原有格式): <pre>文字</pre></p>
+</li>
+<li><p>将文字设置为上标或下标: <sup>文字</sup>， <sub>文字</sub></p>
+</li>
+<li><p>块引用标签: <blockquote>内容</blockquote>（在这个标签内部的元素显示的时候都会向右边缩一个单位。）</p>
+</li>
+<li><p>行内标记：<span>内容</span>：<span> 标签被用来组合文档中的行内元素。<br>可以为 span 应用 id 或 class 属性，这样既可以增加适当的语义，又便于对 span 应用样式。</p>
+</li>
+<li><p>区隔标记：<div>内容</div>：<div> 标签可以把文档分割为独立的、不同的部分。它可以用作严格的组织工具，并且不使用任何格式与其关联。<br>注释：<div> 是一个块级元素，也就是说，浏览器通常会在 div 元素前后放置一个换行符。<br>提示：请使用 <div> 元素来组合块级元素，这样就可以使用样式对它们进行格式化。</p>
+  <img src="图片地址"  alt="图片说明" />
+img标签必选属性：
+  src：图片地址，可以是本地图片，也可以是其他网页的图片
+  alt：规定图像的替代文本。当图片无法正常显示的时候会显示这里的文本。
+img标签常用属性：
+  height：设置图像高度
+  width：设置图片宽度
+  border：图片边框的设置
+img标签的所有属性及其描述：
+
+<p>标签列表：<li></li></p>
+<li>标签定义列表项目。
+<li>标签可用在有序列表 (<ol>) 和无序列表 (<ul>) 中。
+常用属性：type（规定使用哪种项目符号。）</li>
+<li><p>无序标签：<ul></ul></p>
+</li>
+<li><p>有序标签：<ol></ol><br>可以设置样式：text-decoration: none;  —去掉原有标签的文本装饰</p>
+<p>  表格由 <table> 标签来定义。每个表格均有若干行（由 <tr> 标签定义），每行被分割为若干单元格（由 <td> 标签定义）。字母 td 指表格数据（table data），即数据单元格的内容。数据单元格可以包含文本、图片、列表、段落、表单、水平线、表格等等。<br>  表格的表头使用 <th> 标签进行定义。大多数浏览器会把表头显示为粗体居中的文本。<br>  表格的边框属性boeder：设置表格的边框。如果不定义边框属性，表格将不显示边框。<br>  单元格边距cellpadding：设置表格的内边距，即每个<td>中的内容与<td>格子的距离。<br>  单元格间距cellspacing：设置表格的外边距，即每个<td>格子之间的距离。<br>  合并列单元格colspan：合并同一行的某几列（横向）<br>  合并行单元格rowspan：合并同一列的某几行（纵向）</p>
+</li>
+</ul>
+<p>5.表单标签(form)</p>
+<pre><code>HTML 表单用于收集用户输入。表单包含许多表单元素，表单元素指的是不同类型的 input 元素、复选框、单选按钮、提交按钮等等。多数情况下被用到的表单标签是输入标签（&lt;input&gt;），输入类型是由类型属性（type）定义的。</code></pre><form>标签常用属性：
+    1.Action 属性：action 属性定义在提交表单时执行的动作。向服务器提交表单的通常做法是使用提交按钮。通常，表单会被提交到 web 服务器上的网页。如果省略 action 属性，则 action 会被设置为当前页面。
+    2.Method 属性：method 属性规定在提交表单时所用的 HTTP 方法（一般为GET 或 POST，默认为GET）
+    何时使用 GET？
+如果表单提交是被动的（比如搜索引擎查询），并且没有敏感信息。（当您使用 GET 时，表单数据在页面地址栏中是可见的）。注：GET 最适合少量数据的提交。浏览器会设定容量限制。
+    何时使用 POST？
+如果表单正在更新数据，或者包含敏感信息（例如密码）。POST 的安全性更加，因为在页面地址栏中被提交的数据是不可见的。
+
+<p><input>元素常用属性：<br>    name 属性：如果要正确地被提交，每个输入字段必须设置一个name属性。name属性规定<input>元素的名称。<br>    value 属性：指定<input>元素value的值。<br>    type 属性：type属性规定要显示的<input>元素的类型。大多数经常被用到的输入类型有：</p>
+<p>类型  描述<br>text    定义常规文本输入<br>password    输入字符不可见，而是以星号或圆点替代显示<br>radio   定义单选按钮输入（选择多个选择之一）<br>checkbox    定义了复选框. 选取一个或若干选项<br>submit  定义提交按钮（提交表单）<br>button  定义普通的按钮</p>
+<p>其他类型详见：<a href="http://www.runoob.com/tags/tag-input.html" target="_blank" rel="noopener">http://www.runoob.com/tags/tag-input.html</a><br>6.块</p>
+<p>div与span</p>
+<pre><code>div是一个html标签, 一个块级元素(单独显示一行), 单独使用没有任何意义, 必须结合CSS来使用, 主要用于页面的布局;
+span是一个html标签, 一个内联元素(显示一行), 它单独使用没有任何意义, 必须结合css使用, 主要对括起来的内容进行样式的修饰;
+总结:
+    常见的行内标签和 块级元素分别有哪些?
+    行内标签:span, strong, a, img, input, textarea
+    块级元素:div, h1-&gt;h6, p, hr, pre, ul, ol, dd, dt, th. tr, td
+    两者的区别与特性；
+    1).块级元素独占一行空间， 行内元素只占据自身宽度的空间;
+    2).块级元素是可以包含块级元素和行内元素; 行内元素只能包含文本信息和行内元素;
+    3). 块级元素可以设置宽和高， 行内元素设置的宽和高失效；
+    如何让块级元素居中? 如何让行内元素居中?
+    1).块级元素居中： margin: 0 auto
+    2).行内元素居中: text-aligin:center</code></pre><p>CSS<br>1.CSS 概述</p>
+<p>CSS 指层叠样式表 (Cascading Style Sheets)<br>    样式定义如何显示 HTML 元素<br>    样式通常存储在样式表中<br>    把样式添加到 HTML 4.0 中，是为了解决内容与表现分离的问题<br>    外部样式表可以极大提高工作效率<br>    外部样式表通常存储在 CSS 文件中<br>    多个样式定义可层叠为一</p>
+<p>2.CSS 语法</p>
+<p>CSS 规则由两个主要的部分构成：选择器，一条或多条声明。<br>    selector {property: value}<br>选择器通常是您需要改变样式的 HTML 元素。<br>每条声明由一个属性和一个值组成。<br>属性（property）是您希望设置的样式属性（style attribute）。每个属性有一个值。属性和值被冒号分开。<br>多重声明：<br>    提示：如果要定义不止一个声明，则需要用分号将每个声明分开。</p>
+<p>3.四类选择器</p>
+<p>1.元素选择器（类型选择器）<br>最常见的 CSS 选择器是元素选择器。换句话说，文档的元素就是最基本的选择器。<br>在 W3C 标准中，元素选择器又称为类型选择器（type selector）。<br>“类型选择器匹配文档语言元素类型的名称。类型选择器匹配文档树中该元素类型的每一个实例。”<br>参考网址：<a href="http://www.w3school.com.cn/css/css_selector_type.asp" target="_blank" rel="noopener">http://www.w3school.com.cn/css/css_selector_type.asp</a><br>2.id选择器<br>id选择器以 符号”#” 来定义。<br>id选择器可以为标有特定 id 的 HTML 元素指定特定的样式。<br>在一个 HTML 文档中，ID 选择器会使用一次，而且仅一次。<br>参考网址：<a href="http://www.w3school.com.cn/css/css_selector_id.asp" target="_blank" rel="noopener">http://www.w3school.com.cn/css/css_selector_id.asp</a><br>3.类选择器<br>类选择器以一个点号”.”来定义<br>类选择器使得所有使用这个样式的标签具有同样的效果<br>参考网址：<a href="http://www.w3school.com.cn/css/css_selector_class.asp" target="_blank" rel="noopener">http://www.w3school.com.cn/css/css_selector_class.asp</a><br>4.属性选择器<br>属性选择器可以根据元素的属性及属性值来选择元素。<br>对带有指定属性的 HTML 元素设置样式。可以为拥有指定属性的 HTML 元素设置样式，而不仅限于 class 和 id 属性。<br>参考网址：<a href="http://www.w3school.com.cn/css/css_selector_attribute.asp" target="_blank" rel="noopener">http://www.w3school.com.cn/css/css_selector_attribute.asp</a><br>4.插入样式表的三种方法:<br>1.外部样式表(External style sheet)</p>
+<p>当样式需要应用于很多页面时，外部样式表将是理想的选择。在使用外部样式表的情况下，你可以通过改变一个文件来改变整个站点的外观。每个页面使用 <link> 标签链接到样式表。 <link> 标签在（文档的）头部：</p>
+<head>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+
+<p>浏览器会从文件 mystyle.css 中读到样式声明，并根据它来格式文档。<br>外部样式表可以在任何文本编辑器中进行编辑。文件不能包含任何的 html 标签。样式表应该以 .css 扩展名进行保存。<br>2.内部样式表(Internal style sheet)</p>
+<p>当单个文档需要特殊的样式时，就应该使用内部样式表。你可以使用 <style> 标签在文档头部定义内部样式表，就像这样:</p>
+<head>
+<style>
+样式......
+</style>
+</head>
+
+<p>3.内联样式(Inline style)</p>
+<p>由于要将表现和内容混杂在一起，内联样式会损失掉样式表的许多优势。请慎用这种方法，例如当样式仅需要在一个元素上应用一次时。<br>要使用内联样式，你需要在相关的标签内使用样式（style）属性。Style 属性可以包含任何 CSS 属性。</p>
+<p>一般情况下，优先级如下：<br>内联样式）Inline style &gt; （内部样式）Internal style sheet &gt;（外部样式）External style sheet &gt; 浏览器默认样式 </p>
+
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jaytp@qq.com </span>
+    </div>
+</article>
+
+
+<p>
+    <a  class="dashang" onclick="dashangToggle()">赏</a>
+</p>
+
+
+<div class="article_copyright">
+    <p><span class="copy-title">文章标题:</span>兄弟会第十五天</p>
+    
+    <p><span class="copy-title">本文作者:</span><a  title="王新阳">王新阳</a></p>
+    <p><span class="copy-title">发布时间:</span>2019-11-19, 09:02:03</p>
+    <p><span class="copy-title">最后更新:</span>2019-11-19, 09:16:52</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/11/19/15%E5%85%84%E5%BC%9F%E4%BC%9A%E7%AC%AC%E5%8D%81%E4%BA%94%E5%A4%A9/" title="兄弟会第十五天">http://wxy20170906.github.io.com/2019/11/19/15%E5%85%84%E5%BC%9F%E4%BC%9A%E7%AC%AC%E5%8D%81%E4%BA%94%E5%A4%A9/</a>
+    <p>
+        <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+    </p>
+</div>
+
+
+
+
+
+    
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">©2016-2019 Yelog</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full"><span class="min "></span></button>
+<button class="post-toc-menu"><span class="post-toc-menu-icons"></span></button>
+<div class="post-toc"><span class="post-toc-title">目录</span>
+    <div class="post-toc-content">
+
+    </div>
+</div>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+<div class="acParent"></div>
+
+<div class="hide_box" onclick="dashangToggle()"></div>
+<div class="shang_box">
+    <a class="shang_close"  onclick="dashangToggle()">×</a>
+    <div class="shang_tit">
+        <p>喜欢就点赞,疼爱就打赏</p>
+    </div>
+    <div class="shang_payimg">
+        <div class="pay_img">
+            <img src="/img/alipay.jpg" class="alipay" title="扫码支持">
+            <img src="/img/weixin.jpg" class="weixin" title="扫码支持">
+        </div>
+    </div>
+    <div class="shang_payselect">
+        <span><label><input type="radio" name="pay" checked value="alipay">支付宝</label></span><span><label><input type="radio" name="pay" value="weixin">微信</label></span>
+    </div>
+</div>
+
+
+</body>
+<script src="/js/jquery.pjax.js?v=1.0.1" ></script>
+
+<script src="/js/script.js?v=1.0.1" ></script>
+<script>
+    var img_resize = 'default';
+    /*作者、标签的自动补全*/
+    $(function () {
+        $('.search').AutoComplete({
+            'data': [],
+            'itemHeight': 20,
+            'width': 418
+        }).AutoComplete('show');
+    })
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $(".post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+        $("input[name=pay]").on("click", function () {
+            if($("input[name=pay]:checked").val()=="weixin"){
+                $(".shang_box .shang_payimg .pay_img").addClass("weixin_img");
+            } else {
+                $(".shang_box .shang_payimg .pay_img").removeClass("weixin_img");
+            }
+        })
+        
+
+        /*高亮代码块行号*/
+        
+        $('pre code').each(function(){
+            var lines = $(this).text().split('\n').length - 1, widther='';
+            if (lines>99) {
+                widther = 'widther'
+            }
+            var $numbering = $('<ul/>').addClass('pre-numbering ' + widther).attr("unselectable","on");
+            $(this).addClass('has-numbering ' + widther)
+                    .parent()
+                    .append($numbering);
+            for(var i=1;i<=lines;i++){
+                $numbering.append($('<li/>').text(i));
+            }
+        });
+        
+
+        /*访问数量*/
+        
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+    function dashangToggle() {
+        $(".shang_box").fadeToggle();
+        $(".hide_box").fadeToggle();
+    }
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<style>
+    pre{
+        position: relative;
+        margin-bottom: 24px;
+        border-radius: 10px;
+        border: 1px solid #e2dede;
+        background: #FFF;
+        overflow: hidden;
+    }
+    code.has-numbering{
+        margin-left: 30px;
+    }
+    code.has-numbering.widther{
+        margin-left: 35px;
+    }
+    .pre-numbering{
+        margin: 0px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        padding: 0.5em 3px 0.7em 5px;
+        border-right: 1px solid #C3CCD0;
+        text-align: right;
+        color: #AAA;
+        background-color: #fafafa;
+    }
+    .pre-numbering.widther {
+        width: 35px;
+    }
+</style>
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 542px;
+    }
+    .nav.fullscreen {
+        margin-left: -542px;
+    }
+    .nav-left {
+        width: 120px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+        .nav .hide-list.fullscreen {
+            left: 492px
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+    .post .pjax article .article-entry>ol, .post .pjax article .article-entry>ul, .post .pjax article>ol, .post .pjax article>ul{
+        border: #e2dede solid 1px;
+        border-radius: 10px;
+        padding: 10px 32px 10px 56px;
+    }
+    .post .pjax article .article-entry li>ol, .post .pjax article .article-entry li>ul,.post .pjax article li>ol, .post .pjax article li>ul{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .post .pjax article .article-entry>ol>li, .post .pjax article .article-entry>ul>li,.post .pjax article>ol>li, .post .pjax article>ul>li{
+        margin-bottom: auto;
+        margin-left: auto;
+    }
+    .post .pjax article .article-entry li>ol>li, .post .pjax article .article-entry li>ul>li,.post .pjax article li>ol>li, .post .pjax article li>ul>li{
+        margin-bottom: auto;
+        margin-left: auto;
+    }
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+    .nav-right:before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.3;
+        background: url("https://i.loli.net/2019/07/22/5d3521411f3f169375.png");
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        -ms-background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+    
+
+    
+</style>
+
+
+
+
+
+
+
+</html>
