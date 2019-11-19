@@ -13,7 +13,7 @@
 <meta property="og:site_name" content="王新阳个人博客">
 <meta property="og:description" content="欢迎来到 暖阳的博客!  点击 MyGitHub可以进入我的Github. 简易聊天室&amp;amp;emsp&amp;amp;emsp今天是兄弟会第十七天了，今天晚上终于按照教程写了一个聊天室，实在是太难了,哎，总之是说不出的难度，还好能按着教程把东西给做完了。真的特别感谢这个网站的作者    https:&#x2F;&#x2F;www.jianshu.com&#x2F;p&#x2F;b608a765519a下面就是我的代码，虽然现在可能看不太懂，">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-11-19T01:17:18.471Z">
+<meta property="og:updated_time" content="2019-11-19T02:16:06.955Z">
 <meta name="twitter:card" content="summary">
 
 
@@ -419,7 +419,7 @@
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2019-11-19 09:17:18'>2019-11-19 09:02</time>
+        创建时间:<time class="date" title='更新时间: 2019-11-19 10:16:06'>2019-11-19 09:02</time>
         
     </div>
     <div class="article-meta">
@@ -458,7 +458,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>欢迎来到 <a href="https://wxy20170906.github.io/" target="_blank" rel="noopener">暖阳的博客</a>!  点击 <a href="https://wxy20170906.github.io" target="_blank" rel="noopener">MyGitHub</a>可以进入我的Github.</p>
-<h2 id="简易聊天室"><a href="#简易聊天室" class="headerlink" title="简易聊天室"></a>简易聊天室</h2><p>&amp;emsp&amp;emsp今天是兄弟会第十七天了，今天晚上终于按照教程写了一个聊天室，实在是太难了,哎，总之是说不出的难度，还好能按着教程把东西给做完了。真的特别感谢这个网站的作者    <a href="https://www.jianshu.com/p/b608a765519a" target="_blank" rel="noopener">https://www.jianshu.com/p/b608a765519a</a><br>下面就是我的代码，虽然现在可能看不太懂，明天一定要弄懂它。<br>这个是html的代码<br><!doctype html></p>
+<h2 id="简易聊天室"><a href="#简易聊天室" class="headerlink" title="简易聊天室"></a>简易聊天室</h2><p>&amp;emsp&amp;emsp今天是兄弟会第十七天了，今天晚上终于按照教程写了一个聊天室，实在是太难了,哎，总之是说不出的难度，还好能按着教程把东西给做完了。真的特别感谢这个网站的作者    <a href="https://www.jianshu.com/p/b608a765519a" target="_blank" rel="noopener">https://www.jianshu.com/p/b608a765519a</a><br>下面就是我的代码，虽然现在可能看不太懂，明天一定要弄懂它。<br>这个是html的代码<br>/**<!doctype html></p>
 <html>
   <head>
     <title>Socket.IO chat</title>
@@ -474,52 +474,17 @@
     </style>
 
 
-<pre><code> //new addition
-&lt;script src=&quot;http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js&quot;&gt;&lt;/script&gt;
- //end</code></pre>  </head>
-  <body>
-    <ul id="messages"></ul>
-    <form action="">
-      <input id="m" autocomplete="off" /><button>发送</button>
-    </form>
-  </body>
-
-<script src="/socket.io/socket.io.js"></script>
-  <script>
 
 
- var name   = prompt("请输入你的昵称：");
-    var socket = io()
+<p> var name   = prompt(“请输入你的昵称：”);<br>    var socket = io()</p>
+<pre><code>//发送昵称给后端
+socket.emit(&quot;join&quot;, name)
+document.title = name + &quot;的群聊&quot; //new addition
 
-    //发送昵称给后端
-    socket.emit("join", name)
-    document.title = name + "的群聊" //new addition
-
-    //收到服务器发来的join事件时
-socket.on("join", function (user) {
-  addLine(user + " 加入了群聊")
-})
-
-
-
-socket.on("message", function(msg) {
-  addLine(msg)
-})
-
-function addLine(msg) {
-  $('#messages').append($('<li>').text(msg));
-}
-//当发送按钮被点击时
-$('form').submit(function () {
-  var msg = $("#m").val() //获取用户恮的信息
-  socket.emit("message", msg) //将消息发送给服务器
-  $("#m").val("") //置空消息框
-  return false //阻止form提交
-})
-
-   var socket = io()
-  </script>
-
+//收到服务器发来的join事件时</code></pre><p>socket.on(“join”, function (user) {<br>  addLine(user + “ 加入了群聊”)<br>})</p>
+<p>socket.on(“message”, function(msg) {<br>  addLine(msg)<br>})</p>
+<p>function addLine(msg) {<br>  $(‘#messages’).append($(‘<li>‘).text(msg));<br>}<br>//当发送按钮被点击时</p>
+<p>   var socket = io()<br>  </script></p>
 </html>
 
 
@@ -549,7 +514,7 @@ $('form').submit(function () {
     
     <p><span class="copy-title">本文作者:</span><a  title="王新阳">王新阳</a></p>
     <p><span class="copy-title">发布时间:</span>2019-11-19, 09:02:28</p>
-    <p><span class="copy-title">最后更新:</span>2019-11-19, 09:17:18</p>
+    <p><span class="copy-title">最后更新:</span>2019-11-19, 10:16:06</p>
     <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/11/19/17%E5%85%84%E5%BC%9F%E4%BC%9A%E7%AC%AC%E5%8D%81%E4%B8%83%E5%A4%A9/" title="兄弟会第十七天">http://wxy20170906.github.io.com/2019/11/19/17%E5%85%84%E5%BC%9F%E4%BC%9A%E7%AC%AC%E5%8D%81%E4%B8%83%E5%A4%A9/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
